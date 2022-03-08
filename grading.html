@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grading.css">
+</head>
+<body>
+    <!-- this the header section -->
+    <header>
+        
+        <h1 class="m-head">MY GRADING SYSTEM</h1>
+        <span class="flex-span1">Hello</span>
+        <span class="flex-span2">Hello</span>
+        <span class="flex-span3">Hello</span>
+
+    </header>
+    <!-- End of Header section -->
+    <div style="border: none; background-color: rgb(163, 163, 163);">
+        <h3 style="color: white; text-align: center;">
+            Welcome! to my grading system <br>
+            Enter Your Score and double click the button! <img src="" alt="">
+            <div class="container">
+                <input type="text" name="" id="userScore" placeholder="Enter your Score"><br> <br>
+                <button ondblclick="gradeMe()" class="bt-flex"> Check Grade</button>
+            </div>
+        </h3>
+    </div>
+        
+   
+    <Script>
+        var Score=0
+        function gradeMe(){
+            Score = userScore.value
+            //alert(Score)
+        if (Score>=70 && Score<= 100){
+            alert('A Wow! What an Excellent Result')
+        }
+        else if(Score>= 60 && Score<= 69){
+            alert('B This is a Good Result, You can do better')
+        }
+        else if(Score>= 50 && Score<= 59){
+            alert('C Average Result, Put more Effort')
+        }
+        else if(Score>= 45 && Score<= 49){
+            alert('D Pass! Your effort is not Enough')
+        }
+        else if(Score> 40 && Score<= 44){
+            alert('E This is a very Poor Result')
+        }
+        else if(Score>= 0 && Score<= 39){
+            alert('F Woeful, This is a Bad Result')
+        }
+        else{
+            alert('You are a not Serious, This is not Possible')
+        }    
+        }
+
+    </Script>
+</body>
+</html>
